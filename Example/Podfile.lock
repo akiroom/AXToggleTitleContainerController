@@ -1,0 +1,14 @@
+PODS:
+  - AXToggleTitleContainerController (0.1.0)
+
+DEPENDENCIES:
+  - AXToggleTitleContainerController (from `../`)
+
+EXTERNAL SOURCES:
+  AXToggleTitleContainerController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AXToggleTitleContainerController: 4fedfbb17b614c6d941d348c8dba0873cd11a6af
+
+COCOAPODS: 0.36.4

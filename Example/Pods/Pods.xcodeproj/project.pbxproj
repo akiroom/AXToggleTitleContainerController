@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E4FF573F362A89F223D1044 /* Pods-AXToggleTitleContainerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AC52239358939FD1FCCB2 /* Pods-AXToggleTitleContainerController-dummy.m */; };
+		565EA7C60A66A79AAD6EA61E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A461B94CA1DE142935FE626 /* Foundation.framework */; };
+		8150CB1C0BA1781014D8FD83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A461B94CA1DE142935FE626 /* Foundation.framework */; };
+		FC49D7F1BF230C1610C5EA1E /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D11723AD82DBF4866C8901A2 /* Pods-Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D38921FEB90BFFCDB957A375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AE6926605B0718D971B620F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73088C5206B2B65962746D5C;
+			remoteInfo = "Pods-AXToggleTitleContainerController-AXToggleTitleContainerController-AXToggleTitleContainerController";
+		};
+		D800F7E439E4D33CB127C7B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AE6926605B0718D971B620F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE2BA8BE1346A718FA05AAA5;
+			remoteInfo = "Pods-Tests-AXToggleTitleContainerController-AXToggleTitleContainerController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		182AC52239358939FD1FCCB2 /* Pods-AXToggleTitleContainerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AXToggleTitleContainerController-dummy.m"; sourceTree = "<group>"; };
+		192EE5EE8B7B1B426B16FB6C /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A461B94CA1DE142935FE626 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1D4215AE17A83E155CBE75CC /* Pods-AXToggleTitleContainerController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AXToggleTitleContainerController-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E36932BC94A5FA05137B055 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2297540AE00CFBC8F4900A /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		48F71BDDB5E421C6A61D6D8F /* Pods-AXToggleTitleContainerController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AXToggleTitleContainerController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		51C7B76861AC7DE9888A1D35 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5CA57D25F4D20A4521DA3184 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		7AFC863ED5F579FA48ABBF8B /* Pods-AXToggleTitleContainerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AXToggleTitleContainerController.debug.xcconfig"; sourceTree = "<group>"; };
+		83613D52AB9CEF0FFDC2F98F /* Pods-AXToggleTitleContainerController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AXToggleTitleContainerController-resources.sh"; sourceTree = "<group>"; };
+		D11723AD82DBF4866C8901A2 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		DC94201BBBCCBFE7BFB3A6D8 /* AXToggleTitleContainerController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AXToggleTitleContainerController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F0E1C93E5EF49883325B8B /* libPods-AXToggleTitleContainerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AXToggleTitleContainerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E343F5C49A9EF425F205B4C7 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E6501A7EFF036748938A2736 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EF333083183A04EAFBD631D5 /* AXToggleTitleContainerController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AXToggleTitleContainerController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF368413B24F67BC6C3F20A5 /* Pods-AXToggleTitleContainerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AXToggleTitleContainerController.release.xcconfig"; sourceTree = "<group>"; };
+		FAA83BAF5CA7C614133BD844 /* Pods-AXToggleTitleContainerController-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AXToggleTitleContainerController-environment.h"; sourceTree = "<group>"; };
+		FD060AD10F2E2B05825866F8 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34252FF434136D9CB3FAFA5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		762C5E3C00BF92F269FBF11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8150CB1C0BA1781014D8FD83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE3B48FD1F2FD1C52DA441FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF6474875306D69755A0893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565EA7C60A66A79AAD6EA61E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3004EAF7B260F1771BC52D6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF333083183A04EAFBD631D5 /* AXToggleTitleContainerController.bundle */,
+				DC94201BBBCCBFE7BFB3A6D8 /* AXToggleTitleContainerController.bundle */,
+				E2F0E1C93E5EF49883325B8B /* libPods-AXToggleTitleContainerController.a */,
+				2E36932BC94A5FA05137B055 /* libPods-Tests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4650552A303C85A5A36E4AA3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1A461B94CA1DE142935FE626 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4DA6549F7AB54B3AEA763F4C /* Pods-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				192EE5EE8B7B1B426B16FB6C /* Pods-Tests-acknowledgements.markdown */,
+				E343F5C49A9EF425F205B4C7 /* Pods-Tests-acknowledgements.plist */,
+				D11723AD82DBF4866C8901A2 /* Pods-Tests-dummy.m */,
+				5CA57D25F4D20A4521DA3184 /* Pods-Tests-environment.h */,
+				3B2297540AE00CFBC8F4900A /* Pods-Tests-resources.sh */,
+				FD060AD10F2E2B05825866F8 /* Pods-Tests.debug.xcconfig */,
+				51C7B76861AC7DE9888A1D35 /* Pods-Tests.release.xcconfig */,
+			);
+			name = "Pods-Tests";
+			path = "Target Support Files/Pods-Tests";
+			sourceTree = "<group>";
+		};
+		5D314168490052EC1BB39BCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4650552A303C85A5A36E4AA3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7365BD98390DF5ABD3EF9CCA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC53CC0D72CB4EFB6F73F4F3 /* Pods-AXToggleTitleContainerController */,
+				4DA6549F7AB54B3AEA763F4C /* Pods-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		751737362E55B79FB7025977 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80B271A51C579CBBA7AE4814 /* AXToggleTitleContainerController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		80B271A51C579CBBA7AE4814 /* AXToggleTitleContainerController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AXToggleTitleContainerController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		DBFD67F5107B6A2EEF9CC061 = {
+			isa = PBXGroup;
+			children = (
+				E6501A7EFF036748938A2736 /* Podfile */,
+				751737362E55B79FB7025977 /* Development Pods */,
+				5D314168490052EC1BB39BCB /* Frameworks */,
+				3004EAF7B260F1771BC52D6C /* Products */,
+				7365BD98390DF5ABD3EF9CCA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FC53CC0D72CB4EFB6F73F4F3 /* Pods-AXToggleTitleContainerController */ = {
+			isa = PBXGroup;
+			children = (
+				48F71BDDB5E421C6A61D6D8F /* Pods-AXToggleTitleContainerController-acknowledgements.markdown */,
+				1D4215AE17A83E155CBE75CC /* Pods-AXToggleTitleContainerController-acknowledgements.plist */,
+				182AC52239358939FD1FCCB2 /* Pods-AXToggleTitleContainerController-dummy.m */,
+				FAA83BAF5CA7C614133BD844 /* Pods-AXToggleTitleContainerController-environment.h */,
+				83613D52AB9CEF0FFDC2F98F /* Pods-AXToggleTitleContainerController-resources.sh */,
+				7AFC863ED5F579FA48ABBF8B /* Pods-AXToggleTitleContainerController.debug.xcconfig */,
+				EF368413B24F67BC6C3F20A5 /* Pods-AXToggleTitleContainerController.release.xcconfig */,
+			);
+			name = "Pods-AXToggleTitleContainerController";
+			path = "Target Support Files/Pods-AXToggleTitleContainerController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73088C5206B2B65962746D5C /* Pods-AXToggleTitleContainerController-AXToggleTitleContainerController-AXToggleTitleContainerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4ABD571CF2844E81740710B /* Build configuration list for PBXNativeTarget "Pods-AXToggleTitleContainerController-AXToggleTitleContainerController-AXToggleTitleContainerController" */;
+			buildPhases = (
+				1137029B2B0155912E86CA21 /* Sources */,
+				34252FF434136D9CB3FAFA5D /* Frameworks */,
+				8330167E6C2F587D399E7EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AXToggleTitleContainerController-AXToggleTitleContainerController-AXToggleTitleContainerController";
+			productName = "Pods-AXToggleTitleContainerController-AXToggleTitleContainerController-AXToggleTitleContainerController";
+			productReference = EF333083183A04EAFBD631D5 /* AXToggleTitleContainerController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9474515A79B3153E3C4FF75B /* Pods-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C95276ACE51CD6989C2CD77 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildPhases = (
+				621A792E64D30200FD74789C /* Sources */,
+				762C5E3C00BF92F269FBF11E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEFD40D865BD25314E0738AD /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = 2E36932BC94A5FA05137B055 /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EE2BA8BE1346A718FA05AAA5 /* Pods-Tests-AXToggleTitleContainerController-AXToggleTitleContainerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED2EF361E9C5AA2A10627516 /* Build configuration list for PBXNativeTarget "Pods-Tests-AXToggleTitleContainerController-AXToggleTitleContainerController" */;
+			buildPhases = (
+				4AB3F3D3454CEE71F020B6B8 /* Sources */,
+				BE3B48FD1F2FD1C52DA441FA /* Frameworks */,
+				B6BFE29CE91A48D156FAAA2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tests-AXToggleTitleContainerController-AXToggleTitleContainerController";
+			productName = "Pods-Tests-AXToggleTitleContainerController-AXToggleTitleContainerController";
+			productReference = DC94201BBBCCBFE7BFB3A6D8 /* AXToggleTitleContainerController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F75D0745CC7DCBDEBAE642EC /* Pods-AXToggleTitleContainerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DFBE22D4373C644B2C48CD9 /* Build configuration list for PBXNativeTarget "Pods-AXToggleTitleContainerController" */;
+			buildPhases = (
+				0D59E8F8DE2C4DF14E46E0E0 /* Sources */,
+				DEF6474875306D69755A0893 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD0479C20B4E40748E941B6F /* PBXTargetDependency */,
+			);
+			name = "Pods-AXToggleTitleContainerController";
+			productName = "Pods-AXToggleTitleContainerController";
+			productReference = E2F0E1C93E5EF49883325B8B /* libPods-AXToggleTitleContainerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AE6926605B0718D971B620F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 597DECD604A2D43246E1EFBF /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DBFD67F5107B6A2EEF9CC061;
+			productRefGroup = 3004EAF7B260F1771BC52D6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F75D0745CC7DCBDEBAE642EC /* Pods-AXToggleTitleContainerController */,
+				73088C5206B2B65962746D5C /* Pods-AXToggleTitleContainerController-AXToggleTitleContainerController-AXToggleTitleContainerController */,
+				9474515A79B3153E3C4FF75B /* Pods-Tests */,
+				EE2BA8BE1346A718FA05AAA5 /* Pods-Tests-AXToggleTitleContainerController-AXToggleTitleContainerController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8330167E6C2F587D399E7EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6BFE29CE91A48D156FAAA2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D59E8F8DE2C4DF14E46E0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E4FF573F362A89F223D1044 /* Pods-AXToggleTitleContainerController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1137029B2B0155912E86CA21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AB3F3D3454CEE71F020B6B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621A792E64D30200FD74789C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC49D7F1BF230C1610C5EA1E /* Pods-Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD0479C20B4E40748E941B6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AXToggleTitleContainerController-AXToggleTitleContainerController-AXToggleTitleContainerController";
+			target = 73088C5206B2B65962746D5C /* Pods-AXToggleTitleContainerController-AXToggleTitleContainerController-AXToggleTitleContainerController */;
+			targetProxy = D38921FEB90BFFCDB957A375 /* PBXContainerItemProxy */;
+		};
+		BEFD40D865BD25314E0738AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-AXToggleTitleContainerController-AXToggleTitleContainerController";
+			target = EE2BA8BE1346A718FA05AAA5 /* Pods-Tests-AXToggleTitleContainerController-AXToggleTitleContainerController */;
+			targetProxy = D800F7E439E4D33CB127C7B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		020E3784B8B529E13F2FAA34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AXToggleTitleContainerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		17CC469D3BC8A9F9DC34A7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FBD5CEC703EDB90200B8DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51C7B76861AC7DE9888A1D35 /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		45EED52BC74861D3DA73A132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AXToggleTitleContainerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5C81683713488ECD8D221FB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFC863ED5F579FA48ABBF8B /* Pods-AXToggleTitleContainerController.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		88DC7D865C20C340E35339CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AXToggleTitleContainerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		96ED70D847DE7A5BD61A3D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AXToggleTitleContainerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C481869BBA22359CD6A93162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF368413B24F67BC6C3F20A5 /* Pods-AXToggleTitleContainerController.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C6D3D032DF735FDC0BA33EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD060AD10F2E2B05825866F8 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DBB578D21E595659FB827C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C95276ACE51CD6989C2CD77 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D3D032DF735FDC0BA33EF7 /* Debug */,
+				1FBD5CEC703EDB90200B8DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		597DECD604A2D43246E1EFBF /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB578D21E595659FB827C7E /* Debug */,
+				17CC469D3BC8A9F9DC34A7CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DFBE22D4373C644B2C48CD9 /* Build configuration list for PBXNativeTarget "Pods-AXToggleTitleContainerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C81683713488ECD8D221FB7 /* Debug */,
+				C481869BBA22359CD6A93162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4ABD571CF2844E81740710B /* Build configuration list for PBXNativeTarget "Pods-AXToggleTitleContainerController-AXToggleTitleContainerController-AXToggleTitleContainerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88DC7D865C20C340E35339CA /* Debug */,
+				96ED70D847DE7A5BD61A3D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED2EF361E9C5AA2A10627516 /* Build configuration list for PBXNativeTarget "Pods-Tests-AXToggleTitleContainerController-AXToggleTitleContainerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020E3784B8B529E13F2FAA34 /* Debug */,
+				45EED52BC74861D3DA73A132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AE6926605B0718D971B620F /* Project object */;
+}
