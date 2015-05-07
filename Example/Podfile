@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'AXToggleTitleContainerController', :exclusive => true do
+  pod "AXToggleTitleContainerController", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "AXToggleTitleContainerController", :path => "../"
+
+  
+end
