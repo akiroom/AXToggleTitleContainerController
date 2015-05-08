@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "AXToggleTitleContainerController"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "View Controller with Toggling Title View, like the Pixiv for iOS."
   s.description      = <<-DESC
                        View Controller with Toggling Title View, like the Pixiv for iOS.
