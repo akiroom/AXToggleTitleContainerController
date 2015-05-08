@@ -17,10 +17,12 @@
   // Create ToggleTitleContainerController
   AXToggleTitleContainerController *toggleContainerCon =
   [[AXToggleTitleContainerController alloc] initWithTogglableViewControllers:sampleViewControllers];
+  
   // * You can change ToggleButton's TextColor
-  toggleContainerCon.titleToggleButton.tintColor = [UIColor redColor];
+//  toggleContainerCon.titleToggleButton.tintColor = [UIColor redColor];
+  
   // * You can change SubviewList's BackgroundColor.
-  toggleContainerCon.listViewController.snapshotTintColor = [UIColor redColor];
+//  toggleContainerCon.listViewController.snapshotTintColor = [UIColor redColor];
   
   // Create New Window with Navigation Controller
   UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

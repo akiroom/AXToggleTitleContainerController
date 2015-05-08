@@ -1,15 +1,22 @@
 # AXToggleTitleContainerController
 
-[![CI Status](http://img.shields.io/travis/Hiroki Akiyama/AXToggleTitleContainerController.svg?style=flat)](https://travis-ci.org/Hiroki Akiyama/AXToggleTitleContainerController)
+[![CI Status](http://img.shields.io/travis/akiroom/AXToggleTitleContainerController.svg?style=flat)](https://travis-ci.org/akiroom/AXToggleTitleContainerController)
 [![Version](https://img.shields.io/cocoapods/v/AXToggleTitleContainerController.svg?style=flat)](http://cocoapods.org/pods/AXToggleTitleContainerController)
 [![License](https://img.shields.io/cocoapods/l/AXToggleTitleContainerController.svg?style=flat)](http://cocoapods.org/pods/AXToggleTitleContainerController)
 [![Platform](https://img.shields.io/cocoapods/p/AXToggleTitleContainerController.svg?style=flat)](http://cocoapods.org/pods/AXToggleTitleContainerController)
+
+View Controller with Toggling Title View, like the Pixiv for iOS.
+(This software has no relation with Pixiv)
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+These are included by podspec.
+
+- UIImageEffects
 
 ## Installation
 
