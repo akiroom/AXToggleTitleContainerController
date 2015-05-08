@@ -40,13 +40,19 @@
   dummyViewCon4.navigationItem.rightBarButtonItem =
   [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward
                                                 target:nil action:NULL];
-  
+  // Setup Toggle Tittle Container Controller
   NSArray *viewControllers =
   @[
     dummyViewCon1, dummyViewCon2, dummyViewCon3, dummyViewCon4
     ];
   AXToggleTitleContainerController *toggleContainerCon =
   [[AXToggleTitleContainerController alloc] initWithTogglableViewControllers:viewControllers];
+  // You can change ToggleButton's TextColor
+  toggleContainerCon.titleToggleButton.tintColor = [UIColor redColor];
+  // You can change SubviewList's BackgroundColor.
+  toggleContainerCon.subviewListViewController.snapshotTintColor = [UIColor redColor];
+  
+  // Create New Window with Navigation Controller
   UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   window.rootViewController = [[UINavigationController alloc]
                                initWithRootViewController:toggleContainerCon];

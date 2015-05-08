@@ -104,8 +104,11 @@
   }
   
   if (toViewController == _subviewListViewController) {
+    _titleToggleButton.freezeLabelWidth = YES;
     [_subviewListViewController setBackgroundSnapshotWithView:fromViewController.view];
     self.view.backgroundColor = fromViewController.view.backgroundColor;
+  } else {
+    _titleToggleButton.freezeLabelWidth = NO;
   }
   
   if (fromViewController) {

@@ -17,10 +17,10 @@
     self.userInteractionEnabled = YES;
 
     _titleLabel = [[UILabel alloc] init];
-    _titleLabel.adjustsFontSizeToFitWidth = YES;
+//    _titleLabel.adjustsFontSizeToFitWidth = YES;
     _titleLabel.clipsToBounds = YES;
     _titleLabel.lineBreakMode = NSLineBreakByTruncatingMiddle;
-    _titleLabel.minimumScaleFactor = 0.5;
+//    _titleLabel.minimumScaleFactor = 0.5;
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.layer.cornerRadius = 4.0;
     [self addSubview:_titleLabel];
@@ -34,13 +34,15 @@
 {
   NSLog(@"%@", NSStringFromCGRect(self.frame));
   NSLog(@"%@", NSStringFromCGRect(self.superview.frame));
-  [_titleLabel sizeToFit];
-  CGRect moreBounds = CGRectInset(_titleLabel.bounds, -4.0, -4.0);
-  [_titleLabel setBounds:(CGRect){
-    CGPointZero,
-    MIN(CGRectGetWidth(moreBounds), CGRectGetWidth(self.bounds)),
-    CGRectGetHeight(moreBounds)
-  }];
+  if (_freezeLabelWidth == NO) {
+    [_titleLabel sizeToFit];
+    CGRect moreBounds = CGRectInset(_titleLabel.bounds, -4.0, -4.0);
+    [_titleLabel setBounds:(CGRect){
+      CGPointZero,
+      MIN(CGRectGetWidth(moreBounds), CGRectGetWidth(self.bounds)),
+      CGRectGetHeight(moreBounds)
+    }];
+  }
   [_titleLabel setCenter:(CGPoint){
     (CGRectGetMidX(self.bounds)
      - CGRectGetMinX(self.frame) / 2
