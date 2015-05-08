@@ -24,9 +24,6 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  
-  NSLog(@"%@", self.navigationItem.rightBarButtonItem);
-  
   // Lorem ipsum
   _label.text = [LoremIpsum paragraphsWithNumber:4];
   NSString *loremImageURLStr =

@@ -17,10 +17,8 @@
     self.userInteractionEnabled = YES;
 
     _titleLabel = [[UILabel alloc] init];
-//    _titleLabel.adjustsFontSizeToFitWidth = YES;
     _titleLabel.clipsToBounds = YES;
     _titleLabel.lineBreakMode = NSLineBreakByTruncatingMiddle;
-//    _titleLabel.minimumScaleFactor = 0.5;
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.layer.cornerRadius = 4.0;
     [self addSubview:_titleLabel];
@@ -32,8 +30,6 @@
 
 - (void)layoutSubviews
 {
-  NSLog(@"%@", NSStringFromCGRect(self.frame));
-  NSLog(@"%@", NSStringFromCGRect(self.superview.frame));
   if (_freezeLabelWidth == NO) {
     [_titleLabel sizeToFit];
     CGRect moreBounds = CGRectInset(_titleLabel.bounds, -4.0, -4.0);
@@ -91,18 +87,29 @@
   [title appendAttributedString:[[NSAttributedString alloc] initWithString:@" "
                                                                 attributes:attributes]];
 
-  NSString *path = [[NSBundle mainBundle] pathForResource:@"AXToggleTitleContainerController" ofType:@"bundle"];
-  NSBundle *bundle = [NSBundle bundleWithPath:path];
-  NSString *aImagePath;
-  if (self.isSelected) {
-    aImagePath = [bundle pathForResource:@"chevron-up@2x" ofType:@"png"];
-  } else {
-    aImagePath = [bundle pathForResource:@"chevron-down@2x" ofType:@"png"];
+  if (!_chevronUpIcon || !_chevronDownIcon) {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"AXToggleTitleContainerController" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:path];
+    NSString *imagePath;
+    if (!_chevronUpIcon) {
+      imagePath = [bundle pathForResource:@"chevron-up@2x" ofType:@"png"];
+      _chevronUpIcon =
+      [[UIImage imageWithContentsOfFile:imagePath]
+       imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    }
+    if (!_chevronDownIcon) {
+      imagePath = [bundle pathForResource:@"chevron-down@2x" ofType:@"png"];
+      _chevronDownIcon =
+      [[UIImage imageWithContentsOfFile:imagePath]
+       imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    }
   }
+  
   NSTextAttachment *iconAttachment = [[NSTextAttachment alloc] init];
-  iconAttachment.image = [[UIImage imageWithContentsOfFile:aImagePath] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+  iconAttachment.image = (self.isSelected ?
+                          self.chevronUpIcon :
+                          self.chevronDownIcon);
   NSMutableAttributedString *iconString = [[NSAttributedString attributedStringWithAttachment:iconAttachment] mutableCopy];
-  NSLog(@"%ld", iconString.length);
   [iconString addAttributes:@{NSBaselineOffsetAttributeName : @(-1)} range:NSMakeRange(0, 1)];
   [title appendAttributedString:iconString];
 
