@@ -12,11 +12,15 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
   if (self = [super initWithFrame:frame]) {
+    self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     self.font = [UIFont boldSystemFontOfSize:18.0];
     self.userInteractionEnabled = YES;
-    
+
     _titleLabel = [[UILabel alloc] init];
+    _titleLabel.adjustsFontSizeToFitWidth = YES;
     _titleLabel.clipsToBounds = YES;
+    _titleLabel.lineBreakMode = NSLineBreakByTruncatingMiddle;
+    _titleLabel.minimumScaleFactor = 0.5;
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.layer.cornerRadius = 4.0;
     [self addSubview:_titleLabel];
@@ -29,18 +33,16 @@
 - (void)layoutSubviews
 {
   [_titleLabel sizeToFit];
+  CGRect moreBounds = CGRectInset(_titleLabel.bounds, -4.0, -4.0);
+  [_titleLabel setBounds:(CGRect){
+    CGPointZero,
+    MIN(CGRectGetWidth(moreBounds), CGRectGetWidth(self.bounds)),
+    CGRectGetHeight(moreBounds)
+  }];
   [_titleLabel setCenter:(CGPoint){
     CGRectGetMidX(self.bounds),
     CGRectGetMidY(self.bounds)
   }];
-  [_titleLabel setFrame:CGRectInset(_titleLabel.frame, -6.0, -6.0)];
-}
-
-
-- (CGSize)sizeThatFits:(CGSize)size
-{
-  
-  return [_titleLabel sizeThatFits:size];
 }
 
 #pragma mark - Property
@@ -98,6 +100,7 @@
   [title appendAttributedString:iconString];
 
   _titleLabel.attributedText = title;
+  [self setNeedsLayout];
 }
 
 @end

@@ -16,14 +16,14 @@
   AXDummyViewController *dummyViewCon2 = [[AXDummyViewController alloc] init];
   dummyViewCon2.title = @"Users";
   AXDummyViewController *dummyViewCon3 = [[AXDummyViewController alloc] init];
-  dummyViewCon3.title = @"Long Long Title";
+  dummyViewCon3.title = @"Super Long of the Long Awesome Title";
   
   NSArray *viewControllers =
   @[
     dummyViewCon1, dummyViewCon2, dummyViewCon3
     ];
   AXToggleTitleContainerController *toggleContainerCon =
-  [[AXToggleTitleContainerController alloc] initWithViewControllers:viewControllers];
+  [[AXToggleTitleContainerController alloc] initWithTogglableViewControllers:viewControllers];
   UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   window.rootViewController = [[UINavigationController alloc]
                                initWithRootViewController:toggleContainerCon];

@@ -10,7 +10,7 @@
 @interface AXToggleTitleContainerController : UIViewController
 @property (readonly, nonatomic) AXToggleTitleListViewController *subviewListViewController;
 @property (readonly, nonatomic) AXToggleTitleButton *titleToggleButton;
-@property (copy, nonatomic) NSArray *viewControllers;
+@property (copy, nonatomic) NSArray *togglableViewControllers;
 @property (readonly, nonatomic) UIViewController *selectedListViewController;
-- (instancetype)initWithViewControllers:(NSArray *)viewControllers;
+- (instancetype)initWithTogglableViewControllers:(NSArray *)togglableViewControllers;
 @end

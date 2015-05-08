@@ -25,10 +25,10 @@
   return self;
 }
 
-- (instancetype)initWithViewControllers:(NSArray *)viewControllers
+- (instancetype)initWithTogglableViewControllers:(NSArray *)togglableViewControllers
 {
   if (self = [self initWithNibName:nil bundle:nil]) {
-    [self setViewControllers:viewControllers];
+    [self setTogglableViewControllers:togglableViewControllers];
   }
   return self;
 }
@@ -36,10 +36,11 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  [_titleToggleButton setFrame:self.navigationController.navigationBar.bounds];
   self.navigationItem.titleView = _titleToggleButton;
   _subviewListViewController.delegate = self;
   if (!_didFirstTransition) {
-    [self transitionToViewController:[_viewControllers firstObject]];
+    [self transitionToViewController:[_togglableViewControllers firstObject]];
   }
 }
 
@@ -63,17 +64,17 @@
 
 #pragma mark - Property
 
-- (void)setViewControllers:(NSArray *)viewControllers
+- (void)setTogglableViewControllers:(NSArray *)togglableViewControllers
 {
   [_subviewListViewController removeFromParentViewController];
-  for (UIViewController *viewCon in _viewControllers) {
+  for (UIViewController *viewCon in _togglableViewControllers) {
     [viewCon removeFromParentViewController];
   }
   
-  _viewControllers = [viewControllers copy];
+  _togglableViewControllers = [togglableViewControllers copy];
   
   NSMutableArray *titles = [NSMutableArray array];
-  for (UIViewController *viewCon in _viewControllers) {
+  for (UIViewController *viewCon in _togglableViewControllers) {
     [self addChildViewController:viewCon];
     [titles addObject:(viewCon.title ? viewCon.title : @"")];
   }

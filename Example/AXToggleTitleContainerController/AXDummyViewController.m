@@ -18,12 +18,19 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+    
+    // Dummy button
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                          target:nil action:NULL];
+    self.navigationItem.rightBarButtonItem = item;
   }
   return self;
 }
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  
+  NSLog(@"%@", self.navigationItem.rightBarButtonItem);
   
   // Lorem ipsum
   _label.text = [LoremIpsum paragraphsWithNumber:4];
