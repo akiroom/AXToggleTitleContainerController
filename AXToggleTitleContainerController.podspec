@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
                        (This software has no relation with Pixiv)
                        DESC
   s.homepage         = "https://github.com/akiroom/AXToggleTitleContainerController"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots     = "https://raw.githubusercontent.com/akiroom/AXToggleTitleContainerController/master/Screenshots/screenshot0.png", "https://raw.githubusercontent.com/akiroom/AXToggleTitleContainerController/master/Screenshots/screenshot1.png", "https://raw.githubusercontent.com/akiroom/AXToggleTitleContainerController/master/Screenshots/screenshot2.png"
   s.license          = 'MIT'
-  s.author           = { "Hiroki Akiyama" => "aki-hiroki@nifty.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/AXToggleTitleContainerController.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Hiroki Akiyama" => "akiyama@akiroom.com" }
+  s.source           = { :git => "https://github.com/akiroom/AXToggleTitleContainerController.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/akiroom'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -30,7 +30,6 @@ Pod::Spec.new do |s|
     'AXToggleTitleContainerController' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   s.dependency 'UIImageEffects'
 end
