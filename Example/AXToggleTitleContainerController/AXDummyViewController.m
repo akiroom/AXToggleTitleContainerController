@@ -18,11 +18,6 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-    
-    // Dummy button
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
-                                                                          target:nil action:NULL];
-    self.navigationItem.rightBarButtonItem = item;
   }
   return self;
 }

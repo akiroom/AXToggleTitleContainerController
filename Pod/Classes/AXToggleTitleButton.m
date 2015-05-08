@@ -32,6 +32,8 @@
 
 - (void)layoutSubviews
 {
+  NSLog(@"%@", NSStringFromCGRect(self.frame));
+  NSLog(@"%@", NSStringFromCGRect(self.superview.frame));
   [_titleLabel sizeToFit];
   CGRect moreBounds = CGRectInset(_titleLabel.bounds, -4.0, -4.0);
   [_titleLabel setBounds:(CGRect){
@@ -40,7 +42,10 @@
     CGRectGetHeight(moreBounds)
   }];
   [_titleLabel setCenter:(CGPoint){
-    CGRectGetMidX(self.bounds),
+    (CGRectGetMidX(self.bounds)
+     - CGRectGetMinX(self.frame) / 2
+     + (CGRectGetWidth(self.superview.frame) - CGRectGetMaxX(self.frame)) / 2
+     + 0.0),
     CGRectGetMidY(self.bounds)
   }];
 }

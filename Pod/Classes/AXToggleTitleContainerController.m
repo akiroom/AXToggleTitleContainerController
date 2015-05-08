@@ -128,6 +128,12 @@
   if (_selectedListViewController.title.length > 0) {
     _titleToggleButton.title = _selectedListViewController.title;
   }
+  self.navigationItem.leftBarButtonItems = _selectedListViewController.navigationItem.leftBarButtonItems;
+  self.navigationItem.rightBarButtonItems = _selectedListViewController.navigationItem.rightBarButtonItems;
+  self.navigationItem.prompt = _selectedListViewController.navigationItem.prompt;
+  self.navigationItem.hidesBackButton = _selectedListViewController.navigationItem.hidesBackButton;
+  self.navigationItem.backBarButtonItem = _selectedListViewController.navigationItem.backBarButtonItem;
+  
   BOOL isShowingSubviewList = (_selectedListViewController == (id)_subviewListViewController);
   _titleToggleButton.selected = isShowingSubviewList;
 }
