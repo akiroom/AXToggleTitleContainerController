@@ -36,12 +36,17 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  [_titleToggleButton setFrame:self.navigationController.navigationBar.bounds];
   self.navigationItem.titleView = _titleToggleButton;
   _listViewController.delegate = self;
   if (!_didFirstTransition) {
     [self transitionToViewController:[_togglableViewControllers firstObject]];
   }
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+  [_titleToggleButton setFrame:self.navigationController.navigationBar.bounds];
+  [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning
