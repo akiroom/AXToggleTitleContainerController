@@ -20,8 +20,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		7523161E1AFB43D1003CDE1E /* AXDummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7523161D1AFB43D1003CDE1E /* AXDummyViewController.m */; };
-		75C810711AFC566B003D00B7 /* AXDummyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C810701AFC566B003D00B7 /* AXDummyViewController.xib */; };
+		7523161E1AFB43D1003CDE1E /* AXSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7523161D1AFB43D1003CDE1E /* AXSampleViewController.m */; };
+		75C810711AFC566B003D00B7 /* AXSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C810701AFC566B003D00B7 /* AXSampleViewController.xib */; };
 		8E6F00E9096C343150FA565D /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53405D20FF7C1B6D09E74DAB /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +55,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		72D3CBC7653C5E5F538944CD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		7523161C1AFB43D1003CDE1E /* AXDummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXDummyViewController.h; sourceTree = "<group>"; };
-		7523161D1AFB43D1003CDE1E /* AXDummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXDummyViewController.m; sourceTree = "<group>"; };
-		75C810701AFC566B003D00B7 /* AXDummyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXDummyViewController.xib; sourceTree = "<group>"; };
+		7523161C1AFB43D1003CDE1E /* AXSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXSampleViewController.h; sourceTree = "<group>"; };
+		7523161D1AFB43D1003CDE1E /* AXSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXSampleViewController.m; sourceTree = "<group>"; };
+		75C810701AFC566B003D00B7 /* AXSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXSampleViewController.xib; sourceTree = "<group>"; };
 		9760F6FFC90CA9669CD4AEF4 /* Pods-AXToggleTitleContainerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXToggleTitleContainerController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AXToggleTitleContainerController/Pods-AXToggleTitleContainerController.debug.xcconfig"; sourceTree = "<group>"; };
 		9C8E8C7335FAAA93499F3C6E /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B0A2CB7510955C752AD361C3 /* Pods-AXToggleTitleContainerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXToggleTitleContainerController.release.xcconfig"; path = "Pods/Target Support Files/Pods-AXToggleTitleContainerController/Pods-AXToggleTitleContainerController.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,9 +182,9 @@
 		7523161B1AFB43C1003CDE1E /* Dummy view controller */ = {
 			isa = PBXGroup;
 			children = (
-				7523161C1AFB43D1003CDE1E /* AXDummyViewController.h */,
-				7523161D1AFB43D1003CDE1E /* AXDummyViewController.m */,
-				75C810701AFC566B003D00B7 /* AXDummyViewController.xib */,
+				7523161C1AFB43D1003CDE1E /* AXSampleViewController.h */,
+				7523161D1AFB43D1003CDE1E /* AXSampleViewController.m */,
+				75C810701AFC566B003D00B7 /* AXSampleViewController.xib */,
 			);
 			name = "Dummy view controller";
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C810711AFC566B003D00B7 /* AXDummyViewController.xib in Resources */,
+				75C810711AFC566B003D00B7 /* AXSampleViewController.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -366,7 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* AXAppDelegate.m in Sources */,
-				7523161E1AFB43D1003CDE1E /* AXDummyViewController.m in Sources */,
+				7523161E1AFB43D1003CDE1E /* AXSampleViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

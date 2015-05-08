@@ -20,7 +20,7 @@
     [_titleToggleButton setTitle:@"お気に入り"];
     [_titleToggleButton addTarget:self action:@selector(toggleShowingSubviewList:) forControlEvents:UIControlEventTouchUpInside];
     
-    _subviewListViewController = [[AXToggleTitleListViewController alloc] init];
+    _listViewController = [[AXToggleTitleListViewController alloc] init];
   }
   return self;
 }
@@ -38,7 +38,7 @@
   [super viewDidLoad];
   [_titleToggleButton setFrame:self.navigationController.navigationBar.bounds];
   self.navigationItem.titleView = _titleToggleButton;
-  _subviewListViewController.delegate = self;
+  _listViewController.delegate = self;
   if (!_didFirstTransition) {
     [self transitionToViewController:[_togglableViewControllers firstObject]];
   }
@@ -54,11 +54,11 @@
 
 - (void)toggleShowingSubviewList:(id)sender
 {
-  if (_selectedListViewController == (id)_subviewListViewController) {
-    [self transitionToViewController:_togglableViewControllers[_subviewListViewController.selectedIndex]];
+  if (_selectedViewController == (id)_listViewController) {
+    [self transitionToViewController:_togglableViewControllers[_listViewController.selectedIndex]];
   } else {
-    _subviewListViewController.selectedIndex = [_togglableViewControllers indexOfObject:_selectedListViewController];
-    [self transitionToViewController:_subviewListViewController];
+    _listViewController.selectedIndex = [_togglableViewControllers indexOfObject:_selectedViewController];
+    [self transitionToViewController:_listViewController];
   }
 }
 
@@ -66,7 +66,7 @@
 
 - (void)setTogglableViewControllers:(NSArray *)togglableViewControllers
 {
-  [_subviewListViewController removeFromParentViewController];
+  [_listViewController removeFromParentViewController];
   for (UIViewController *viewCon in _togglableViewControllers) {
     [viewCon removeFromParentViewController];
   }
@@ -77,7 +77,7 @@
   for (UIViewController *viewCon in _togglableViewControllers) {
     [titles addObject:(viewCon.title ? viewCon.title : @"")];
   }
-  _subviewListViewController.subviewTitles = titles;
+  _listViewController.subviewTitles = titles;
 }
 
 #pragma mark - Sub view list view controller delegate
@@ -98,14 +98,14 @@
   _isTransitioning = YES;
   _didFirstTransition = YES;
   
-  UIViewController *fromViewController = _selectedListViewController;
+  UIViewController *fromViewController = _selectedViewController;
   if (fromViewController == toViewController) {
     return;
   }
   
-  if (toViewController == _subviewListViewController) {
+  if (toViewController == _listViewController) {
     _titleToggleButton.freezeLabelWidth = YES;
-    [_subviewListViewController setBackgroundSnapshotWithView:fromViewController.view];
+    [_listViewController setBackgroundSnapshotWithView:fromViewController.view];
     self.view.backgroundColor = fromViewController.view.backgroundColor;
   } else {
     _titleToggleButton.freezeLabelWidth = NO;
@@ -127,19 +127,19 @@
     _isTransitioning = NO;
   }
   
-  _selectedListViewController = (id)toViewController;
-  if (_selectedListViewController.title.length > 0) {
-    _titleToggleButton.title = _selectedListViewController.title;
+  _selectedViewController = (id)toViewController;
+  if (_selectedViewController.title.length > 0) {
+    _titleToggleButton.title = _selectedViewController.title;
   }
-  [self.navigationItem setLeftBarButtonItems:_selectedListViewController.navigationItem.leftBarButtonItems
+  [self.navigationItem setLeftBarButtonItems:_selectedViewController.navigationItem.leftBarButtonItems
                                     animated:YES];
-  [self.navigationItem setRightBarButtonItems:_selectedListViewController.navigationItem.rightBarButtonItems
+  [self.navigationItem setRightBarButtonItems:_selectedViewController.navigationItem.rightBarButtonItems
                                      animated:YES];
-  self.navigationItem.prompt = _selectedListViewController.navigationItem.prompt;
-  self.navigationItem.hidesBackButton = _selectedListViewController.navigationItem.hidesBackButton;
-  self.navigationItem.backBarButtonItem = _selectedListViewController.navigationItem.backBarButtonItem;
+  self.navigationItem.prompt = _selectedViewController.navigationItem.prompt;
+  self.navigationItem.hidesBackButton = _selectedViewController.navigationItem.hidesBackButton;
+  self.navigationItem.backBarButtonItem = _selectedViewController.navigationItem.backBarButtonItem;
   
-  BOOL isShowingSubviewList = (_selectedListViewController == (id)_subviewListViewController);
+  BOOL isShowingSubviewList = (_selectedViewController == (id)_listViewController);
   _titleToggleButton.selected = isShowingSubviewList;
 }
 

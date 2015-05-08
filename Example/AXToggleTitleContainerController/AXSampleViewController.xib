@@ -6,7 +6,7 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AXDummyViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AXSampleViewController">
             <connections>
                 <outlet property="imageView" destination="b9D-xO-Hia" id="DHl-sf-L0x"/>
                 <outlet property="label" destination="QWf-Sa-WZe" id="Fee-uM-MbU"/>

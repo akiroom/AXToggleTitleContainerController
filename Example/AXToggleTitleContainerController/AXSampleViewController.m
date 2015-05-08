@@ -1,31 +1,26 @@
 //
-//  AXDummyViewController.m
+//  AXSampleViewController.m
 //  AXToggleTitleContainerController
 //
 
-#import "AXDummyViewController.h"
+#import "AXSampleViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <LoremIpsum/LoremIpsum.h>
 
-@interface AXDummyViewController ()
+@interface AXSampleViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *label;
-
 @end
 
-@implementation AXDummyViewController
-
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-  if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-  }
-  return self;
-}
+@implementation AXSampleViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Lorem ipsum
+
+  // Lorem ipsum text
   _label.text = [LoremIpsum paragraphsWithNumber:4];
+
+  // Lorem ipsum image
   NSString *loremImageURLStr =
   [NSString stringWithFormat:@"%@?dummy=%@",
    [[LoremIpsum URLForPlaceholderImageWithSize:_imageView.bounds.size] absoluteString],

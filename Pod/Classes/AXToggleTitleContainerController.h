@@ -8,9 +8,9 @@
 #import "AXToggleTitleButton.h"
 
 @interface AXToggleTitleContainerController : UIViewController
-@property (readonly, nonatomic) AXToggleTitleListViewController *subviewListViewController;
+@property (readonly, nonatomic) AXToggleTitleListViewController *listViewController;
 @property (readonly, nonatomic) AXToggleTitleButton *titleToggleButton;
 @property (copy, nonatomic) NSArray *togglableViewControllers;
-@property (readonly, nonatomic) UIViewController *selectedListViewController;
+@property (readonly, nonatomic) UIViewController *selectedViewController;
 - (instancetype)initWithTogglableViewControllers:(NSArray *)togglableViewControllers;
 @end

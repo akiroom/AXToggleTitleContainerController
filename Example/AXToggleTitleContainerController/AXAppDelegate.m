@@ -5,52 +5,21 @@
 
 #import "AXAppDelegate.h"
 #import <AXToggleTitleContainerController/AXToggleTitleContainerController.h>
-#import "AXDummyViewController.h"
+#import "AXSampleViewController.h"
 
 @implementation AXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  UIBarButtonItem *item;
+  // Generate samples
+  NSArray *sampleViewControllers = [self generateSampleViewControllers];
   
-  // Normal View Controller
-  AXDummyViewController *dummyViewCon1 = [[AXDummyViewController alloc] init];
-  dummyViewCon1.title = @"Main";
-
-  // View Controller with Left Bar Button Item
-  AXDummyViewController *dummyViewCon2 = [[AXDummyViewController alloc] init];
-  dummyViewCon2.title = @"Articles";
-  item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
-                                                       target:nil action:NULL];
-  dummyViewCon2.navigationItem.leftBarButtonItem = item;
-
-  // View Controller with Right Bar Button Item
-  AXDummyViewController *dummyViewCon3 = [[AXDummyViewController alloc] init];
-  dummyViewCon3.title = @"Users";
-  item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks
-                                                       target:nil action:NULL];
-  dummyViewCon3.navigationItem.rightBarButtonItem = item;
-  
-  // View Controller with Left and Right Bar Button Item
-  AXDummyViewController *dummyViewCon4 = [[AXDummyViewController alloc] init];
-  dummyViewCon4.title = @"Super Long of the Long Awesome Title";
-  dummyViewCon4.navigationItem.leftBarButtonItem =
-  [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind
-                                                target:nil action:NULL];
-  dummyViewCon4.navigationItem.rightBarButtonItem =
-  [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward
-                                                target:nil action:NULL];
-  // Setup Toggle Tittle Container Controller
-  NSArray *viewControllers =
-  @[
-    dummyViewCon1, dummyViewCon2, dummyViewCon3, dummyViewCon4
-    ];
   AXToggleTitleContainerController *toggleContainerCon =
-  [[AXToggleTitleContainerController alloc] initWithTogglableViewControllers:viewControllers];
-  // You can change ToggleButton's TextColor
+  [[AXToggleTitleContainerController alloc] initWithTogglableViewControllers:sampleViewControllers];
+  // * You can change ToggleButton's TextColor
   toggleContainerCon.titleToggleButton.tintColor = [UIColor redColor];
-  // You can change SubviewList's BackgroundColor.
-  toggleContainerCon.subviewListViewController.snapshotTintColor = [UIColor redColor];
+  // * You can change SubviewList's BackgroundColor.
+  toggleContainerCon.listViewController.snapshotTintColor = [UIColor redColor];
   
   // Create New Window with Navigation Controller
   UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -61,24 +30,53 @@
   return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
+- (NSArray *)generateSampleViewControllers
 {
-}
+  UIBarButtonItem *item;
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-}
+  // Normal View Controller
+  AXSampleViewController *sampleViewCon1; {
+    AXSampleViewController *sampleViewCon1 = [[AXSampleViewController alloc] init];
+    sampleViewCon1.title = @"Main";
+  }
+  
+  // View Controller with Left Bar Button Item
+  AXSampleViewController *sampleViewCon2; {
+    sampleViewCon2 = [[AXSampleViewController alloc] init];
+    sampleViewCon2.title = @"Articles";
+    item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                         target:nil action:NULL];
+    sampleViewCon2.navigationItem.leftBarButtonItem = item;
+  }
+  
+  // View Controller with Right Bar Button Item
+  AXSampleViewController *sampleViewCon3; {
+    sampleViewCon3 = [[AXSampleViewController alloc] init];
+    sampleViewCon3.title = @"Users";
+    item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks
+                                                         target:nil action:NULL];
+    sampleViewCon3.navigationItem.rightBarButtonItem = item;
+  }
+  
+  // View Controller with Left and Right Bar Button Item
+  AXSampleViewController *sampleViewCon4; {
+    sampleViewCon4 = [[AXSampleViewController alloc] init];
+    sampleViewCon4.title = @"Super Long of the Long Awesome Title";
+    sampleViewCon4.navigationItem.leftBarButtonItem =
+    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind
+                                                  target:nil action:NULL];
+    sampleViewCon4.navigationItem.rightBarButtonItem =
+    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward
+                                                  target:nil action:NULL];
+  }
+  
+  // Setup Toggle Tittle Container Controller
+  NSArray *viewControllers =
+  @[
+    sampleViewCon1, sampleViewCon2, sampleViewCon3, sampleViewCon4
+    ];
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
+  return viewControllers;
 }
 
 @end
