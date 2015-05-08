@@ -119,6 +119,7 @@
   if (fromViewController) {
     [fromViewController willMoveToParentViewController:nil];
     [self addChildViewController:toViewController];
+    toViewController.view.frame = self.view.bounds;
     [self transitionFromViewController:fromViewController toViewController:toViewController duration:0.1 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
     } completion:^(BOOL finished) {
       [fromViewController removeFromParentViewController];
