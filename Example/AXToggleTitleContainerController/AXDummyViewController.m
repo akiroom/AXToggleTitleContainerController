@@ -35,7 +35,7 @@
    [self.title substringToIndex:3]];
   NSURL *loremImageURL = [NSURL URLWithString:loremImageURLStr];
   UIImage *emptyImage = [[UIImage alloc] init];
-  [_imageView sd_setImageWithURL:loremImageURL placeholderImage:emptyImage];
+  [_imageView sd_setImageWithURL:loremImageURL placeholderImage:emptyImage options:SDWebImageCacheMemoryOnly];
 }
 
 @end
