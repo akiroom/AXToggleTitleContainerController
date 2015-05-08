@@ -55,9 +55,9 @@
 - (void)toggleShowingSubviewList:(id)sender
 {
   if (_selectedListViewController == (id)_subviewListViewController) {
-    [self transitionToViewController:self.childViewControllers[_subviewListViewController.selectedIndex]];
+    [self transitionToViewController:_togglableViewControllers[_subviewListViewController.selectedIndex]];
   } else {
-    _subviewListViewController.selectedIndex = [self.childViewControllers indexOfObject:_selectedListViewController];
+    _subviewListViewController.selectedIndex = [_togglableViewControllers indexOfObject:_selectedListViewController];
     [self transitionToViewController:_subviewListViewController];
   }
 }
@@ -70,23 +70,21 @@
   for (UIViewController *viewCon in _togglableViewControllers) {
     [viewCon removeFromParentViewController];
   }
-  
+
   _togglableViewControllers = [togglableViewControllers copy];
-  
+
   NSMutableArray *titles = [NSMutableArray array];
   for (UIViewController *viewCon in _togglableViewControllers) {
-    [self addChildViewController:viewCon];
     [titles addObject:(viewCon.title ? viewCon.title : @"")];
   }
   _subviewListViewController.subviewTitles = titles;
-  [self addChildViewController:_subviewListViewController];
 }
 
 #pragma mark - Sub view list view controller delegate
 
 - (void)toggleTitleListViewController:(AXToggleTitleListViewController *)toggleTitleListViewController didSelectIndex:(NSInteger)selectedIndex
 {
-  UIViewController *nextViewController = self.childViewControllers[selectedIndex];
+  UIViewController *nextViewController = _togglableViewControllers[selectedIndex];
   [self transitionToViewController:nextViewController];
 }
 
@@ -105,27 +103,26 @@
     return;
   }
   
-  [fromViewController beginAppearanceTransition:NO animated:NO];
-  [toViewController beginAppearanceTransition:YES animated:NO];
-  
-  toViewController.view.frame = self.view.bounds;
-  
   if (toViewController == _subviewListViewController) {
     [_subviewListViewController setBackgroundSnapshotWithView:fromViewController.view];
+    self.view.backgroundColor = fromViewController.view.backgroundColor;
   }
-  if (fromViewController.view && toViewController.view) {
-    [UIView transitionFromView:fromViewController.view toView:toViewController.view duration:0.1 options:UIViewAnimationOptionTransitionCrossDissolve completion:^(BOOL finished) {
-      [fromViewController.view removeFromSuperview];
+  
+  if (fromViewController) {
+    [fromViewController willMoveToParentViewController:nil];
+    [self addChildViewController:toViewController];
+    [self transitionFromViewController:fromViewController toViewController:toViewController duration:0.1 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+    } completion:^(BOOL finished) {
+      [fromViewController removeFromParentViewController];
+      [toViewController didMoveToParentViewController:self];
       _isTransitioning = NO;
     }];
   } else {
-    [fromViewController.view removeFromSuperview];
+    [self addChildViewController:toViewController];
     [self.view addSubview:toViewController.view];
+    [toViewController didMoveToParentViewController:self];
     _isTransitioning = NO;
   }
-  
-  [fromViewController endAppearanceTransition];
-  [toViewController endAppearanceTransition];
   
   _selectedListViewController = (id)toViewController;
   if (_selectedListViewController.title.length > 0) {
