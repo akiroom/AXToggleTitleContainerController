@@ -11,9 +11,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  // Generate samples
-  NSArray *sampleViewControllers = [self generateSampleViewControllers];
+  // Create sample view controllers
+  NSArray *sampleViewControllers = [self createSampleViewControllers];
   
+  // Create ToggleTitleContainerController
   AXToggleTitleContainerController *toggleContainerCon =
   [[AXToggleTitleContainerController alloc] initWithTogglableViewControllers:sampleViewControllers];
   // * You can change ToggleButton's TextColor
@@ -30,13 +31,13 @@
   return YES;
 }
 
-- (NSArray *)generateSampleViewControllers
+- (NSArray *)createSampleViewControllers
 {
   UIBarButtonItem *item;
 
   // Normal View Controller
   AXSampleViewController *sampleViewCon1; {
-    AXSampleViewController *sampleViewCon1 = [[AXSampleViewController alloc] init];
+    sampleViewCon1 = [[AXSampleViewController alloc] init];
     sampleViewCon1.title = @"Main";
   }
   
