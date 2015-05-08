@@ -12,3 +12,63 @@
 #define COCOAPODS_VERSION_MINOR_AXToggleTitleContainerController 1
 #define COCOAPODS_VERSION_PATCH_AXToggleTitleContainerController 0
 
+// FontAwesomeKit
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit 2
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit 0
+
+// FontAwesomeKit/Core
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_Core
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_Core 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_Core 2
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_Core 0
+
+// FontAwesomeKit/FontAwesome
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_FontAwesome
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_FontAwesome 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_FontAwesome 2
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_FontAwesome 0
+
+// FontAwesomeKit/FoundationIcons
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_FoundationIcons
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_FoundationIcons 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_FoundationIcons 2
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_FoundationIcons 0
+
+// FontAwesomeKit/IonIcons
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_IonIcons
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_IonIcons 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_IonIcons 2
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_IonIcons 0
+
+// FontAwesomeKit/Zocial
+#define COCOAPODS_POD_AVAILABLE_FontAwesomeKit_Zocial
+#define COCOAPODS_VERSION_MAJOR_FontAwesomeKit_Zocial 2
+#define COCOAPODS_VERSION_MINOR_FontAwesomeKit_Zocial 2
+#define COCOAPODS_VERSION_PATCH_FontAwesomeKit_Zocial 0
+
+// LoremIpsum
+#define COCOAPODS_POD_AVAILABLE_LoremIpsum
+#define COCOAPODS_VERSION_MAJOR_LoremIpsum 1
+#define COCOAPODS_VERSION_MINOR_LoremIpsum 0
+#define COCOAPODS_VERSION_PATCH_LoremIpsum 0
+
+// SDWebImage
+#define COCOAPODS_POD_AVAILABLE_SDWebImage
+#define COCOAPODS_VERSION_MAJOR_SDWebImage 3
+#define COCOAPODS_VERSION_MINOR_SDWebImage 7
+#define COCOAPODS_VERSION_PATCH_SDWebImage 2
+
+// SDWebImage/Core
+#define COCOAPODS_POD_AVAILABLE_SDWebImage_Core
+#define COCOAPODS_VERSION_MAJOR_SDWebImage_Core 3
+#define COCOAPODS_VERSION_MINOR_SDWebImage_Core 7
+#define COCOAPODS_VERSION_PATCH_SDWebImage_Core 2
+
+// UIImageEffects
+#define COCOAPODS_POD_AVAILABLE_UIImageEffects
+#define COCOAPODS_VERSION_MAJOR_UIImageEffects 0
+#define COCOAPODS_VERSION_MINOR_UIImageEffects 0
+#define COCOAPODS_VERSION_PATCH_UIImageEffects 1
+

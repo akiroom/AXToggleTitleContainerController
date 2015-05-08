@@ -12,3 +12,9 @@
 #define COCOAPODS_VERSION_MINOR_AXToggleTitleContainerController 1
 #define COCOAPODS_VERSION_PATCH_AXToggleTitleContainerController 0
 
+// UIImageEffects
+#define COCOAPODS_POD_AVAILABLE_UIImageEffects
+#define COCOAPODS_VERSION_MAJOR_UIImageEffects 0
+#define COCOAPODS_VERSION_MINOR_UIImageEffects 0
+#define COCOAPODS_VERSION_PATCH_UIImageEffects 1
+

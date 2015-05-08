@@ -1,14 +1,42 @@
 PODS:
-  - AXToggleTitleContainerController (0.1.0)
+  - AXToggleTitleContainerController (0.1.0):
+    - UIImageEffects
+  - FontAwesomeKit (2.2.0):
+    - FontAwesomeKit/Core (= 2.2.0)
+    - FontAwesomeKit/FontAwesome (= 2.2.0)
+    - FontAwesomeKit/FoundationIcons (= 2.2.0)
+    - FontAwesomeKit/IonIcons (= 2.2.0)
+    - FontAwesomeKit/Zocial (= 2.2.0)
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/FontAwesome (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.0):
+    - FontAwesomeKit/Core
+  - LoremIpsum (1.0.0)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
+  - UIImageEffects (0.0.1)
 
 DEPENDENCIES:
   - AXToggleTitleContainerController (from `../`)
+  - FontAwesomeKit
+  - LoremIpsum
+  - SDWebImage
 
 EXTERNAL SOURCES:
   AXToggleTitleContainerController:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AXToggleTitleContainerController: 4fedfbb17b614c6d941d348c8dba0873cd11a6af
+  AXToggleTitleContainerController: bf09aebc1102bf9e560d601ca7937d4a5fb3c72e
+  FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
+  LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  UIImageEffects: 37b99fa461e4965f332ca82e92f2c22a1075ee84
 
 COCOAPODS: 0.36.4

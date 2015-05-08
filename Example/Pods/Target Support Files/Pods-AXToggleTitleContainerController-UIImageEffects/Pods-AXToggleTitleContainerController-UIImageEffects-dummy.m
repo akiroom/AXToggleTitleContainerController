@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_AXToggleTitleContainerController_UIImageEffects : NSObject
+@end
+@implementation PodsDummy_Pods_AXToggleTitleContainerController_UIImageEffects
+@end
